@@ -12,6 +12,14 @@ variables:
   tag: '$(Build.BuildId)'
 
 stages:
+- task: SnykSecurityScan@1
+  inputs:
+    serviceConnectionEndpoint: 'Snyk Task Run'
+    testType: 'app'
+    severityThreshold: 'critical'
+    monitorWhen: 'always'
+    failOnIssues: true
+    projectName: 'Zeus Snyk'
 - stage: Build
   displayName: Build image
   jobs:
