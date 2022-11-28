@@ -24,7 +24,7 @@ stages:
     - task: Npm@1
       displayName: "Npm Install"
       inputs:
-        command: 'npm install'
+        command: 'install'
     - task: SnykSecurityScan@1
       inputs:
         serviceConnectionEndpoint: 'Snyk Task Run'
