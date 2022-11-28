@@ -21,6 +21,10 @@ stages:
       vmImage: ubuntu-latest
     steps:
     - task: NodeTool@0
+    - task: Npm@1
+      displayName: "Npm Install"
+      inputs:
+        command: 'npm install'
     - task: SnykSecurityScan@1
       inputs:
         serviceConnectionEndpoint: 'Snyk Task Run'
