@@ -22,7 +22,7 @@ stages:
     steps:
     - task: NodeTool@0
     - task: Npm@1
-      displayName: "Npm Install"
+      displayName: Npm Install
       inputs:
         command: 'install'
     - task: SnykSecurityScan@1
