@@ -33,6 +33,14 @@ stages:
         monitorWhen: 'always'
         failOnIssues: true
         projectName: 'Zeus Snyk'
+    - task: SnykSecurityScan@1
+      inputs:
+        serviceConnectionEndpoint: 'Snyk Task Run'
+        testType: 'app'
+        severityThreshold: 'medium'
+        monitorWhen: 'always'
+        failOnIssues: false
+        additionalArguments: '--code'
     - task: Docker@2
       displayName: Build an image
       inputs:
