@@ -18,7 +18,7 @@ stages:
   - job: Build
     displayName: Build
     pool:
-      vmImage: ubuntu-latest
+      vmImage: windows-2019
     steps:
     - task: NodeTool@0
     - task: Npm@1
