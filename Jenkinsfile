@@ -34,10 +34,10 @@ pipeline {
         }
 
            // stage('Build App') {
-           steps {
-                 sh 'Building..'
-                 sh 'npm install'
-            }
+          // steps {
+                 // sh 'Building..'
+                 // sh 'npm install'
+           // }
       //  }
 
         stage('Snyk') {
