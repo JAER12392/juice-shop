@@ -5,3 +5,5 @@
 6. a. No code review for catching any bug, possiblity of breaking build, ensuring code quality, makes it difficult to work on different features and fixes since the main copy has already been broken.
    b. BRANCH PROTECTION!!!!
 7. https://github.com/JAER12392/juice-shop.git
+
+"adding this new commit to the master branch"
