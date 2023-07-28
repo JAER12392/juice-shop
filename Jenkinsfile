@@ -33,12 +33,12 @@ pipeline {
             }
         }
 
-           stage('Build App') {
+           // stage('Build App') {
            steps {
                  sh 'Building..'
                  sh 'npm install'
             }
-        }
+      //  }
 
         stage('Snyk') {
             parallel {
