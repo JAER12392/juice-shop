@@ -10,7 +10,7 @@ pipeline {
     agent any
 
     // Requires a configured NodeJS installation via https://plugins.jenkins.io/nodejs/
-    tools { nodejs "NodeJS 20.5.0" }
+    tools { nodejs "nodejs" }
 
     stages {
 
